@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | TrendyWear Finds</title>
+<meta name="description" content="Contact TrendyWear Finds">
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;margin:0;padding:0}
+.container{max-width:700px;margin:60px auto;background:#fff;padding:40px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,0.08)}
+h1{color:#E60023;margin-bottom:20px}
+input,textarea{width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc}
+button{background:#E60023;color:#fff;padding:12px 20px;border:none;border-radius:6px;cursor:pointer}
+button:hover{opacity:0.9}
+footer{text-align:center;margin-top:30px;color:#777;font-size:14px}
+</style>
+<script>
+function validateForm(){
+  const email=document.getElementById("email").value;
+  if(!email.includes("@")){
+    alert("Please enter a valid email address.");
+    return false;
+  }
+  alert("Message submitted successfully (Demo only).");
+  return false;
+}
+</script>
+</head>
+<body>
+<div class="container">
+<h1>Contact Us</h1>
+
+<p>If you have questions regarding TrendyWear Finds, feel free to contact us.</p>
+
+<form onsubmit="return validateForm()">
+<input type="text" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<p><strong>Email:</strong> trendywear.finds@gmail.com</p>
+
+<footer>
+© 2026 TrendyWear Finds
+</footer>
+</div>
+</body>
+</html>
